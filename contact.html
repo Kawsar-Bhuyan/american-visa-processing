@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tittle -->
+    <title>Contact Page</title>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!--bootstrap link -->
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <!-- Css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- =========== Header Area Start ========== -->
+    <header class="header others_page_header">
+        <div class="header_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <div class="logo">
+                            <a href="index.html"> <img src="assets/images/logo/logo.png" alt="logo"></a>
+                        </div>
+
+                        <!--  search large device start -->
+                        <div class="search">
+                            <div class="search_icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="search_input">
+                                <input type="text" placeholder="search for travels...">
+                            </div>
+                        </div>
+                        <!--  search large device  end -->
+
+
+                        <!-- search mobail  Start -->
+                        <div class="search_mobail">
+                            <div class="mobail_search_icon" onclick="toggleElement()">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="mobail_search_input" id="hideandshow">
+                                <input type="text" placeholder="search for travels...">
+                            </div>
+                        </div>
+                        <!--  search Mobail  End -->
+
+                        <div class="global_and_contact">
+                            <div class="global">
+                                <select name="" id="">
+                                    <option value="">India</option>
+                                    <option value="">Canada</option>
+                                    <option value="">Scotland</option>
+                                    <option value="">America</option>
+                                    <option value="">Brazil</option>
+                                </select>
+                            </div>
+                            <div class="contact"><a href="contact.html">Contact Us</a></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="header_middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <!-- navber large device start -->
+                        <nav>
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#home">Visas</a></li>
+                                <li><a href="#home">passport</a></li>
+                                <li class="dropdown">
+                                    <a href="#services" class="dropbtn">Services &#9662;</a>
+                                    <div class="dropdown-content">
+                                        <a href="#service1">Service 1</a>
+                                        <a href="#service2">Service 2</a>
+                                        <a href="#service3">Service 3</a>
+                                    </div>
+                                </li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <!-- navber large device end -->
+
+
+                        <!-- navber mobail device start -->
+                        <div id="Menu_container" class="mobile_menu mobile_nav_menu" style="display: none">
+                            <div class="mobile_menu_header">
+                                <div class="mobile_logo">
+                                    <a href="#">
+                                        <img src="assets/images/logo/logo.png" alt="logo">
+                                    </a>
+                                </div>
+                                <div class="mobile_close_icon" onclick="closeMenu()">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                            </div>
+                            <div class="mobile_menu_body">
+                                <div class="mobile_menu">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Visas
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                passport
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" onclick="toggleElementnavber()">Services ▾</a>
+                                            <ul id="myElement">
+                                                <li><a href="#">service-1</a></li>
+                                                <li><a href="#">service-2</a></li>
+                                                <li><a href="#">service-3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                About
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Docs Authentication
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Contact
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="offcanvas_area">
+                            <div class="header_toggle_icon" onclick="openMenu()">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                        </div>
+                        <!--navber mobail device end-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ======== Header Area End =========== -->
+
+
+
+    <!-- ========== Contact Page Start ========= -->
+    <section class="contact_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact_page_tittle">
+                        <div class="tittle">
+                            <h2><span class="title_animation">Contact</span> Us</h2>
+                        </div>
+                        <div class="sub_tittle">
+                            <p>Have a question or remark? Feel free to contact us!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="quick_contact">
+                        <a href="#">
+                            <div class="quick_contact_icon">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="quick_contact_details">
+                                <div class="quick_contact_title">
+                                    <h5>Email</h5>
+                                </div>
+                                <div class="quick_contact_address">
+                                    <span>Kawsarbhuyan100@gmail.com</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="quick_contact">
+                        <a href="#">
+                            <div class="quick_contact_icon">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div class="quick_contact_details">
+                                <div class="quick_contact_title">
+                                    <h5>What'sapp</h5>
+                                </div>
+                                <div class="quick_contact_address">
+                                    <span>+8801775332371</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="quick_contact">
+                        <a href="#">
+                            <div class="quick_contact_icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="quick_contact_details">
+                                <div class="quick_contact_title">
+                                    <h5>Find Us</h5>
+                                </div>
+                                <div class="quick_contact_address">
+                                    <span>Benaroshi Polli, Mirpur-10, Dhaka-1216, Bangladesh</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container ">
+            <div class="row">
+                <div class="col-xl-8 m-auto">
+                    <div class="auth_form">
+                        <form action="https://mohasagorit.solutions/user-feedback" method="post" id="sendMessageForm"
+                            id="sendMessageForm">
+                            <input type="hidden" name="_token" value="VJC2ita3Fy6LVUYd3vaVaDJmKMsfh83hLUGDJdEj">
+                            <div class="row">
+                                <div class="col-sm-6 col-12">
+                                    <div class="auth_group">
+                                        <div class="auth_item">
+                                            <label>Name <span class="require_star">*</span></label>
+                                            <input type="text" name="name" placeholder="Your full name" id="name"
+                                                required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-12">
+                                    <div class="auth_group">
+                                        <div class="auth_item">
+                                            <label>Phone <span class="require_star">*</span></label>
+                                            <input type="text" name="phone"
+                                                placeholder="Provide your active phone number" id="sent_msg_phone"
+                                                required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-12">
+                                    <div class="auth_group">
+                                        <div class="auth_item">
+                                            <label>Email </label>
+                                            <input type="email" name="email" placeholder="Your email address"
+                                                id="email">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-12">
+                                    <div class="auth_group">
+                                        <div class="auth_item">
+                                            <label>Subject</label>
+                                            <input type="text" name="subject" placeholder="Your requested subject name"
+                                                id="subject">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-12">
+                                    <div class="auth_group">
+                                        <div class="auth_item">
+                                            <label>Message</label>
+                                            <textarea name="message" id="message"
+                                                placeholder="Please put your message here" rows="2"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-12">
+                                    <div class="auth_group">
+                                        <div class="auth_btn">
+                                            <div class="common_btn">
+                                                <button type="submit" class="common_btn_link">
+                                                    <i class="common_btn_icon"></i>
+                                                    <span class="common_btn_title">Send Message</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== Contact Page End ========= -->
+
+
+
+    <!-- ==========Footer Start============ -->
+    <footer class="footer_area">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="footer_content">
+                            <div class="footer_title">
+                                <h3>Head Office</h3>
+                            </div>
+                            <div class="footer_address_list">
+                                <ul>
+                                    <li>
+                                        <div class="footer_address_list_title">
+                                            <h4>American Visa company</h4>
+                                        </div>
+                                        <div class="footer_address_content">
+                                            <div class="footer_address_content_title">
+                                                <h5>Address</h5>
+                                            </div>
+                                            <div class="footer_address_content_description">
+                                                <p href="#" class="footer_address_content_description_unlink">
+                                                    House no: 8, Road no: 7, Block-A, Mirpur-10, Dhaka-1219
+                                                    (opposite of Indhor Stadium)
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="footer_address_content">
+
+                                            <div class="footer_address_content_title">
+                                                <h5>Phone</h5>
+                                            </div>
+                                            <div class="footer_address_content_description">
+                                                <a href="tel:0247215555"
+                                                    class="footer_address_content_description_link">
+                                                    1236547955665414
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="footer_address_content">
+                                            <div class="footer_address_content_title">
+                                                <h5>Mobile</h5>
+                                            </div>
+                                            <div class="footer_address_content_description">
+                                                <a href="tel:01327-375092"
+                                                    class="footer_address_content_description_link">
+                                                    12+66742105413
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="footer_content text-center">
+                            <div class="footer_title">
+                                <h3>Quick Links</h3>
+                            </div>
+                            <div class="footer_address_list">
+                                <ul>
+                                    <div class="latest_news_btn">
+                                        <a href="https://royalaidhospital.com.bd/about-us"
+                                            class="footer_address_content_description_link">
+                                            About US
+                                        </a>
+                                    </div>
+                                    <div class="latest_news_btn">
+                                        <a href="https://royalaidhospital.com.bd/news-events"
+                                            class="footer_address_content_description_link">
+                                            News & Events
+                                        </a>
+                                    </div>
+                                    <div class="latest_news_btn">
+                                        <a href="https://royalaidhospital.com.bd/doctors"
+                                            class="footer_address_content_description_link">
+                                            visa Processing
+                                        </a>
+                                    </div>
+                                    <div class="latest_news_btn">
+                                        <a href="https://royalaidhospital.com.bd/contact-us"
+                                            class="footer_address_content_description_link">
+                                            Contact Us
+                                        </a>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="footer_content">
+                            <div class="footer_title">
+                                <h3>Location</h3>
+                            </div>
+                            <div class="footer_address_list">
+                                <div class="contact_us_map">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.1814507996896!2d90.36522547420921!3d23.812145886405187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1083a8ba0e5%3A0x41663ac6626f226f!2sMohasagor%20IT%20Solutions!5e0!3m2!1sen!2sbd!4v1700661663976!5m2!1sen!2sbd"
+                                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="footer_content">
+                            <div class="footer_title">
+                                <h3>Send Us Message</h3>
+                            </div>
+                            <div class="footer_contact_form">
+                                <form action="https://royalaidhospital.com.bd/user-feedback" method="post"
+                                    id="sendMessageForm">
+                                    <input type="hidden" name="_token" value="bk870249wFpOvMsjhoOuNsmldXrbhar4bhbrbKTi">
+                                    <div class="footer_contact_content">
+                                        <div class="footer_form_item">
+                                            <input type="text" placeholder="Full Name" name="name" required>
+
+                                        </div>
+                                        <div class="footer_form_item">
+                                            <input type="number" placeholder="Phone Number" name="phone" required
+                                                id="footer_sent_msg_no">
+                                        </div>
+                                        <div class="footer_form_item">
+                                            <textarea type="text" rows="2" placeholder="Message" name="details"
+                                                required></textarea>
+
+                                        </div>
+                                        <div class="footer_form_btn">
+                                            <button type="submit" class="footer_form_btn_link">Send Message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="footer_social_media">
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/royalaidhospital" class="footer_social_media_link"
+                                        target="_blank">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/" class="footer_social_media_link" target="_blank">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="footer_copyright">
+                            <p>Copyright ©
+                                <script>document.write(new Date().getFullYear())</script> All rights reserved | <a
+                                    class="copyright_link" href="https://mohasagorit.solutions/" target="_blank">MIT</a>
+                                Department
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- =============Footer End============ -->
+
+
+
+    <!-- Jquery -->
+    <script src="Assets/js/jquery-3.6.3.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Javascript -->
+    <script src="Assets/js/custom.js"></script>
+</body>
+
+</html>

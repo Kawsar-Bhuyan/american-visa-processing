@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tittle -->
+    <title>VISA</title>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!--bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Bootstrap Navber -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- magnafic popup -->
+    <link rel="stylesheet" href="assets/css/plugin/magnific-popup.min.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="assets/css/plugin/owl.carousel.min.css">
+    <!-- Nice Select -->
+    <link rel="stylesheet" href="path/to/jquery-nice-select/css/nice-select.css">
+    <!-- Css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <!-- =========== Header Area Start ========== -->
+    <header class="header" style="background-image:url(../visa/assets/images/header-img/header.jpg);">
+        <div class="header_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <div class="logo">
+                           <a href="index.html"> <img src="assets/images/logo/logo.png" alt="logo"></a>
+                        </div>
+
+                        <!--  search large device start -->
+                        <div class="search">
+                            <div class="search_icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="search_input">
+                                <input type="text" placeholder="search for travels...">
+                            </div>
+                        </div>
+                        <!--  search large device  end -->
+
+
+                        <!-- search mobail  Start -->
+                        <div class="search_mobail">
+                            <div class="mobail_search_icon" onclick="toggleElement()">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="mobail_search_input" id="hideandshow">
+                                <input type="text" placeholder="search for travels...">
+                            </div>
+                        </div>
+                        <!--  search Mobail  End -->
+
+                        <div class="global_and_contact">
+                            <div class="global">
+                                <select name="" id="">
+                                    <option value="">India</option>
+                                    <option value="">Canada</option>
+                                    <option value="">Scotland</option>
+                                    <option value="">America</option>
+                                    <option value="">Brazil</option>
+                                </select>
+                            </div>
+                            <div class="contact"><a href="contact.html">Contact Us</a></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="header_middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <!-- navber large device start -->
+                        <nav>
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#home">Visas</a></li>
+                                <li><a href="#home">passport</a></li>
+                                <li class="dropdown">
+                                    <a href="#services" class="dropbtn">Services &#9662;</a>
+                                    <div class="dropdown-content">
+                                        <a href="#service1">Service 1</a>
+                                        <a href="#service2">Service 2</a>
+                                        <a href="#service3">Service 3</a>
+                                    </div>
+                                </li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <!-- navber large device end -->
+
+
+                        <!-- navber mobail device start -->
+                        <div id="Menu_container" class="mobile_menu mobile_nav_menu" style="display: none">
+                            <div class="mobile_menu_header">
+                                <div class="mobile_logo">
+                                    <a href="#">
+                                        <img src="assets/images/logo/logo.png" alt="logo">
+                                    </a>
+                                </div>
+                                <div class="mobile_close_icon" onclick="closeMenu()">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                            </div>
+                            <div class="mobile_menu_body">
+                                <div class="mobile_menu">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Visas
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                passport
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" onclick="toggleElementnavber()">Services ▾</a>
+                                            <ul id="myElement">
+                                                <li><a href="#">service-1</a></li>
+                                                <li><a href="#">service-2</a></li>
+                                                <li><a href="#">service-3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                About
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Docs Authentication
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Contact
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="offcanvas_area">
+                            <div class="header_toggle_icon" onclick="openMenu()">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                        </div>
+                        <!--navber mobail device end-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="header_tittle_and_explain">
+                            <h2> Travel Visa Requirements</h2>
+                            <p" class="travel_explain">
+                                Sometimes a journey of a thousand miles begins with a visa.
+                                Check your destination and apply online for any visa in the world.If you meet specific
+                                eligibility requirements then you may wish to apply for an e-Visa.The e-Visa is an
+                                electronic authorization from the government to enter India and is equivalent to a visa,
+                                but no stamp or label is placed in your passport. To be eligible the traveler must:
+                                Sometimes a journey of a thousand miles begins with a visa.
+                                Check your destination and apply online for any visa in the world.If you meet specific
+                                eligibility requirements then you may wish to apply for an e-Visa.The e-Visa is an
+                                electronic authorization from the government to enter India and is equivalent to a visa,
+                                but no stamp or label is placed in your passport. To be eligible the traveler must:
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </header>
+    <!-- ======== Header Area End =========== -->
+
+
+    <!--============ Introdruction Area Start ============-->
+    <section class="introdruction_area">
+        <div class="container">
+            <div class="row gy-4">
+
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="introdruction_content">
+                        <div class="curve_one"></div>
+                        <div class="curve_two"></div>
+                        <div class="curve_three"></div>
+                        <div class="curve_four"></div>
+                        <div class="introdruction_image">
+                            <img src="https://royalaidhospital.com.bd/public/storage/images/feature/u4TGKXvOmshxYrdcAAfFpPP1mdV6zUipCXgXNR2A.png"
+                                alt="feature_image">
+                        </div>
+                        <div class="introdruction_title">
+                            <h3>Qualified Medical Staff</h3>
+                        </div>
+                        <div class="introdruction_details">
+                            <p>We have a team of highly qualified and experienced medical professionals, including
+                                doctors, nurses, and specialists, to provide comprehensive healthcare services.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="introdruction_content">
+                        <div class="curve_one"></div>
+                        <div class="curve_two"></div>
+                        <div class="curve_three"></div>
+                        <div class="curve_four"></div>
+                        <div class="introdruction_image">
+                            <img src="https://royalaidhospital.com.bd/public/storage/images/feature/u4TGKXvOmshxYrdcAAfFpPP1mdV6zUipCXgXNR2A.png"
+                                alt="feature_image">
+                        </div>
+                        <div class="introdruction_title">
+                            <h3>Qualified Medical Staff</h3>
+                        </div>
+                        <div class="introdruction_details">
+                            <p>We have a team of highly qualified and experienced medical professionals, including
+                                doctors, nurses, and specialists, to provide comprehensive healthcare services.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="introdruction_content">
+                        <div class="curve_one"></div>
+                        <div class="curve_two"></div>
+                        <div class="curve_three"></div>
+                        <div class="curve_four"></div>
+                        <div class="introdruction_image">
+                            <img src="https://royalaidhospital.com.bd/public/storage/images/feature/u4TGKXvOmshxYrdcAAfFpPP1mdV6zUipCXgXNR2A.png"
+                                alt="feature_image">
+                        </div>
+                        <div class="introdruction_title">
+                            <h3>Qualified Medical Staff</h3>
+                        </div>
+                        <div class="introdruction_details">
+                            <p>We have a team of highly qualified and experienced medical professionals, including
+                                doctors, nurses, and specialists, to provide comprehensive healthcare services.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="introdruction_content">
+                        <div class="curve_one"></div>
+                        <div class="curve_two"></div>
+                        <div class="curve_three"></div>
+                        <div class="curve_four"></div>
+                        <div class="introdruction_image">
+                            <img src="https://royalaidhospital.com.bd/public/storage/images/feature/u4TGKXvOmshxYrdcAAfFpPP1mdV6zUipCXgXNR2A.png"
+                                alt="feature_image">
+                        </div>
+                        <div class="introdruction_title">
+                            <h3>Qualified Medical Staff</h3>
+                        </div>
+                        <div class="introdruction_details">
+                            <p>We have a team of highly qualified and experienced medical professionals, including
+                                doctors, nurses, and specialists, to provide comprehensive healthcare services.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--============ Introdruction Area End ============-->
+
+
+    <!-- ============= Short About Area Start ============== -->
+    <section class="about_area">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-xl-6 col-lg-5 col-md-12 col-sm-12 col-12">
+                    <div class="about_image">
+                        <img src="assets/images/top_travels/5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-7 col-md-12 col-sm-12 col-12">
+                    <div class="about_content">
+                        <div class="about_subtitle">
+                            <h6>About visa processing countries</h6>
+                        </div>
+                        <div class="about_title">
+                            <h2>The Quick brown fox Jumps over The lazy dog.</h2>
+                        </div>
+                        <div class="about_tab_content_body">
+                            <ul class="nav nav-pills about_nav about_nav_pills mb-2" id="pills-tab" role="tablist">
+                                <li class="nav-item about_nav_item" role="presentation">
+                                    <button class="nav-link about_nav_link active" id="pills-home-tab"
+                                        data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
+                                        aria-controls="pills-home" aria-selected="true">Why choose us?</button>
+                                </li>
+                                <li class="nav-item about_nav_item" role="presentation">
+                                    <button class="nav-link about_nav_link" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">What we do?</button>
+                                </li>
+                                <li class="nav-item about_nav_item" role="presentation">
+                                    <button class="nav-link about_nav_link" id="pills-contact-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-contact" type="button" role="tab"
+                                        aria-controls="pills-contact" aria-selected="false">Other Services</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">
+                                    <div class="about_tab_content">
+                                        <div class="about_tab_description">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                                                voluptas rerum voluptatibus pariatur. Eligendi animi ut, perferendis vel
+                                                eaque incidunt.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab">
+                                    <div class="about_tab_content">
+                                        <div class="about_tab_description">
+                                            <p>We offers you various kinds of medical services.</p>
+                                        </div>
+                                        <div class="about_tab_list">
+                                            <ul>
+                                                <li>
+                                                    <i class="fa-regular fa-square-check"></i>
+                                                    Doctor's Consultation
+                                                </li>
+                                                <li>
+                                                    <i class="fa-regular fa-square-check"></i>
+                                                    Best Diagnostics Service
+                                                </li>
+                                                <li>
+                                                    <i class="fa-regular fa-square-check"></i>
+                                                    24 Hour Hospital Service
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                    aria-labelledby="pills-contact-tab">
+                                    <div class="about_tab_content">
+                                        <div class="about_tab_list about_tab_description">
+                                            <ul>
+                                                <li>
+                                                    <i class="fa-regular fa-square-check"></i>
+                                                    Ambulance Service
+                                                </li>
+                                                <li>
+                                                    <i class="fa-regular fa-square-check"></i>
+                                                    24 hour Pharmacy Service
+                                                </li>
+                                                <li>
+                                                    <i class="fa-regular fa-square-check"></i>
+                                                    Emmergency Service
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============= Short About Area End =============== -->
+
+
+    <!-- ============ Visa Processing Countries Area Start =========== -->
+    <section class="visa_processing_countries_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="section_tittle">
+                        <h3> Visa Processing Countries <div class="underline"><span></span></div>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-4 gy-4">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="flag_card">
+                        <div class="flag_img">
+                            <img src="assets/images/flaug/america.jpg" alt="flag">
+                        </div>
+                        <div class="flag_name">
+                            <h5>America</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="flag_card">
+                        <div class="flag_img">
+                            <img src="assets/images/flaug/Argentina.png" alt="flag">
+                        </div>
+                        <div class="flag_name">
+                            <h5>Argentina</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="flag_card">
+                        <div class="flag_img">
+                            <img src="assets/images/flaug/India.jpg" alt="flag">
+                        </div>
+                        <div class="flag_name">
+                            <h5>India</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="flag_card">
+                        <div class="flag_img">
+                            <img src="assets/images/flaug/quora.webp" alt="flag">
+                        </div>
+                        <div class="flag_name">
+                            <h5>Quora</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="flag_card">
+                        <div class="flag_img">
+                            <img src="assets/images/flaug/south-africa.webp" alt="flag">
+                        </div>
+                        <div class="flag_name">
+                            <h5>South Africa</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="flag_card">
+                        <div class="flag_img">
+                            <img src="assets/images/flaug/spain.jpg" alt="flag">
+                        </div>
+                        <div class="flag_name">
+                            <h5>Spain</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="flag_card">
+                        <div class="flag_img">
+                            <img src="assets/images/flaug/turkey.jpg" alt="flag">
+                        </div>
+                        <div class="flag_name">
+                            <h5>Turkey</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="flag_card">
+                        <div class="flag_img">
+                            <img src="assets/images/flaug/united kingdom.webp" alt="flag">
+                        </div>
+                        <div class="flag_name">
+                            <h5>United Kingdom</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============ Visa Processing Countries Area End ========== -->
+
+
+    <!-- =============  Img Gallery Start ============= -->
+    <section class="gallery-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="section_tittle">
+                        <h3> Image Gallery <div class="underline"><span></span></div>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-4 gallerys">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="gallery-box">
+                        <a href="assets/images/img-gallery/1.png" target="_blank">
+                            <img src="assets/images/img-gallery/1.png" alt="gallery-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="gallery-box">
+                        <a href="assets/images/img-gallery/2.png" target="_blank">
+                            <img src="assets/images/img-gallery/2.png" alt="gallery-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="gallery-box">
+                        <a href="assets/images/img-gallery/3.png" target="_blank">
+                            <img src="assets/images/img-gallery/3.png" alt="gallery-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="gallery-box">
+                        <a href="assets/images/img-gallery/4.png" target="_blank">
+                            <img src="assets/images/img-gallery/4.png" alt="gallery-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="gallery-box">
+                        <a href="assets/images/img-gallery/5.png" target="_blank">
+                            <img src="assets/images/img-gallery/5.png" alt="gallery-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="gallery-box">
+                        <a href="assets/images/img-gallery/6.png" target="_blank">
+                            <img src="assets/images/img-gallery/6.png" alt="gallery-img">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- =============  Img Gallery End ============= -->
+
+
+    <!-- =============== world map Area Start ============= -->
+    <section class="world_map_area">
+
+        <div class="section_tittle">
+            <h3> VisaHQ services are available <div class="underline"><span></span></div>
+            </h3>
+        </div>
+        <div class="world_map" style="background-image: url(../visa/assets/images/visahq/bvhq_index_map_mobile.png);">
+            <div class="location_1">
+                <div class="location_icon_and_name">
+                    <div class="location_icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="location_name">
+                        <span>America</span>
+                    </div>
+                </div>
+            </div>
+            <div class="location_2">
+                <div class="location_icon_and_name">
+                    <div class="location_icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="location_name">
+                        <span>Scotland</span>
+                    </div>
+                </div>
+            </div>
+            <div class="location_3">
+                <div class="location_icon_and_name">
+                    <div class="location_icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="location_name">
+                        <span>Nepal</span>
+                    </div>
+                </div>
+            </div>
+            <div class="location_4">
+                <div class="location_icon_and_name">
+                    <div class="location_icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="location_name">
+                        <span>India</span>
+                    </div>
+                </div>
+            </div>
+            <div class="location_5">
+                <div class="location_icon_and_name">
+                    <div class="location_icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="location_name">
+                        <span>Quora</span>
+                    </div>
+                </div>
+            </div>
+            <div class="location_6">
+                <div class="location_icon_and_name">
+                    <div class="location_icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="location_name">
+                        <span>Dubai</span>
+                    </div>
+                </div>
+            </div>
+            <div class="location_7">
+                <div class="location_icon_and_name">
+                    <div class="location_icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="location_name">
+                        <span>Pakistan</span>
+                    </div>
+                </div>
+            </div>
+            <div class="location_8">
+                <div class="location_icon_and_name">
+                    <div class="location_icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="location_name">
+                        <span>Turkey</span>
+                    </div>
+                </div>
+            </div>
+            <div class="location_9">
+                <div class="location_icon_and_name">
+                    <div class="location_icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="location_name">
+                        <span>Maleshiya</span>
+                    </div>
+                </div>
+            </div>
+            <div class="location_10">
+                <div class="location_icon_and_name">
+                    <div class="location_icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="location_name">
+                        <span>Bangladesh</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============= world map Area End =========== -->
+
+
+    <!-- ============ VisaHQ work Area Start ============ -->
+    <section class="visahq_work_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_tittle">
+                        <h3>How does American Visa Processing work? <div class="underline"><span></span></div>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="visa_processing_tecniqe">
+                    <ul>
+                        <li>1</li>
+                        <span></span>
+                        <li>2</li>
+                        <span></span>
+                        <li>3</li>
+                    </ul>
+                    <div class="visa_process_img_and_text">
+                        <div class="visa_process_tecnique_card">
+                            <div class="visa_process_img">
+                                <img src="assets/images/visa-process/1.png" alt="">
+                            </div>
+                            <div class="visa_process_text">
+                                <h5>Apply online</h5>
+                                <p>Secure online application saves time and checks for errors</p>
+                            </div>
+                        </div>
+                        <div class="visa_process_tecnique_card">
+                            <div class="visa_process_img">
+                                <img src="assets/images/visa-process/2.png" alt="">
+                            </div>
+                            <div class="visa_process_text">
+                                <h5>Mail documents</h5>
+                                <p>No need to stand in line at the consulate, we will do it for you</p>
+                            </div>
+                        </div>
+                        <div class="visa_process_tecnique_card">
+                            <div class="visa_process_img">
+                                <img src="assets/images/visa-process/3.png" alt="">
+                            </div>
+                            <div class="visa_process_text">
+                                <h5>Receive passport, visa</h5>
+                                <p>Real time status updates will keep you informed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ============ VisaHQ work Area End ============ -->
+
+
+    <!--============ Our  Clients Area Start ============-->
+    <section class="our_happy_clients_area section_padding_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_tittle">
+                        <h3>Our Clients Say <div class="underline"><span></span></div>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container section_top_space">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="client_say_active owl-carousel">
+
+                        <div class="single_client_say">
+                            <div class="row">
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="clients_say_image_content">
+                                        <div class="clients_say_image">
+                                            <img src="assets/images/client_img/1.jpg" alt="Atm Bayezidur Rohman">
+                                        </div>
+                                        <div class="clients_say_client_name">
+                                            <h3>Kamrul Hossain</h3>
+                                        </div>
+                                        <div class="clients_say_client_designation">
+                                            <h6>Founder &amp; CEO</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                                    <div class="clients_say_content">
+                                        <div class="clients_say_icon">
+                                            <img src="https://mohasagorit.solutions/public/frontend/assets/images/clients_say/icon.png"
+                                                alt="icon">
+                                        </div>
+                                        <div class="clients_say_details">
+                                            <div class="clients_say_title_star">
+                                                <div class="clients_say_title">
+                                                    <h2>Best Travels</h2>
+                                                </div>
+                                                <div class="clients_say_star">
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="clients_say_description">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nulla
+                                                    est doloribus maiores sunt aliquam dolorem, ex sint a earum
+                                                    dignissimos neque quod eius illo et excepturi. A, natus numquam.
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                                                    temporibus dolores et dolorum doloremque debitis minima sit, natus
+                                                    quod ipsa!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_client_say">
+                            <div class="row">
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="clients_say_image_content">
+                                        <div class="clients_say_image">
+                                            <img src="assets/images/client_img/2.jpg" alt="Nazmul Khan Rubel">
+                                        </div>
+                                        <div class="clients_say_client_name">
+                                            <h3>Md Manik mollah</h3>
+                                        </div>
+                                        <div class="clients_say_client_designation">
+                                            <h6>CEO of group</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                                    <div class="clients_say_content">
+                                        <div class="clients_say_icon">
+                                            <img src="https://mohasagorit.solutions/public/frontend/assets/images/clients_say/icon.png"
+                                                alt="icon">
+                                        </div>
+                                        <div class="clients_say_details">
+                                            <div class="clients_say_title_star">
+                                                <div class="clients_say_title">
+                                                    <h2>Best Travels</h2>
+                                                </div>
+                                                <div class="clients_say_star">
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="clients_say_description">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero ad
+                                                    cum modi optio pariatur quibusdam fuga esse illo aspernatur, facilis
+                                                    numquam deleniti dolore quo incidunt cupiditate doloremque
+                                                    repellendus, earum possimus. Totam laborum repudiandae fuga
+                                                    assumenda debitis necessitatibus, rerum omnis consequatur ut
+                                                    veritatis, quo eos a quaerat quod eaque recusandae. Fugit.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_client_say">
+                            <div class="row">
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="clients_say_image_content">
+                                        <div class="clients_say_image">
+                                            <img src="assets/images/client_img/3.jpeg" alt="Saiful Islam">
+                                        </div>
+                                        <div class="clients_say_client_name">
+                                            <h3>Tanim Billah</h3>
+                                        </div>
+                                        <div class="clients_say_client_designation">
+                                            <h6>CEO</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                                    <div class="clients_say_content">
+                                        <div class="clients_say_icon">
+                                            <img src="https://mohasagorit.solutions/public/frontend/assets/images/clients_say/icon.png"
+                                                alt="icon">
+                                        </div>
+                                        <div class="clients_say_details">
+                                            <div class="clients_say_title_star">
+                                                <div class="clients_say_title">
+                                                    <h2>Best Travels</h2>
+                                                </div>
+                                                <div class="clients_say_star">
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="clients_say_description">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                                                    pariatur fugiat ducimus, quidem vel laudantium corporis sit autem,
+                                                    sapiente quasi, vitae ipsam quis? Dignissimos quis non excepturi
+                                                    maxime facere consequuntur labore cumque commodi omnis? Laudantium
+                                                    rerum sequi laborum voluptates ipsa!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============ Our  Clients Area End ============-->
+
+
+    <!-- ==========Footer Start============ -->
+    <footer class="footer_area">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="footer_content">
+                            <div class="footer_title">
+                                <h3>Head Office</h3>
+                            </div>
+                            <div class="footer_address_list">
+                                <ul>
+                                    <li>
+                                        <div class="footer_address_list_title">
+                                            <h4>American Visa company</h4>
+                                        </div>
+                                        <div class="footer_address_content">
+                                            <div class="footer_address_content_title">
+                                                <h5>Address</h5>
+                                            </div>
+                                            <div class="footer_address_content_description">
+                                                <p href="#" class="footer_address_content_description_unlink">
+                                                    House no: 8, Road no: 7, Block-A, Mirpur-10, Dhaka-1219
+                                                    (opposite of Indhor Stadium)
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="footer_address_content">
+
+                                            <div class="footer_address_content_title">
+                                                <h5>Phone</h5>
+                                            </div>
+                                            <div class="footer_address_content_description">
+                                                <a href="tel:0247215555"
+                                                    class="footer_address_content_description_link">
+                                                    1236547955665414
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="footer_address_content">
+                                            <div class="footer_address_content_title">
+                                                <h5>Mobile</h5>
+                                            </div>
+                                            <div class="footer_address_content_description">
+                                                <a href="tel:01327-375092"
+                                                    class="footer_address_content_description_link">
+                                                    12+66742105413
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="footer_content text-center">
+                            <div class="footer_title">
+                                <h3>Quick Links</h3>
+                            </div>
+                            <div class="footer_address_list">
+                                <ul>
+                                    <div class="latest_news_btn">
+                                        <a href="https://royalaidhospital.com.bd/about-us"
+                                            class="footer_address_content_description_link">
+                                            About US
+                                        </a>
+                                    </div>
+                                    <div class="latest_news_btn">
+                                        <a href="https://royalaidhospital.com.bd/news-events"
+                                            class="footer_address_content_description_link">
+                                            News & Events
+                                        </a>
+                                    </div>
+                                    <div class="latest_news_btn">
+                                        <a href="https://royalaidhospital.com.bd/doctors"
+                                            class="footer_address_content_description_link">
+                                            visa Processing
+                                        </a>
+                                    </div>
+                                    <div class="latest_news_btn">
+                                        <a href="https://royalaidhospital.com.bd/contact-us"
+                                            class="footer_address_content_description_link">
+                                            Contact Us
+                                        </a>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="footer_content">
+                            <div class="footer_title">
+                                <h3>Location</h3>
+                            </div>
+                            <div class="footer_address_list">
+                                <div class="contact_us_map">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.1814507996896!2d90.36522547420921!3d23.812145886405187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1083a8ba0e5%3A0x41663ac6626f226f!2sMohasagor%20IT%20Solutions!5e0!3m2!1sen!2sbd!4v1700661663976!5m2!1sen!2sbd"
+                                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="footer_content">
+                            <div class="footer_title">
+                                <h3>Send Us Message</h3>
+                            </div>
+                            <div class="footer_contact_form">
+                                <form action="https://royalaidhospital.com.bd/user-feedback" method="post"
+                                    id="sendMessageForm">
+                                    <input type="hidden" name="_token" value="bk870249wFpOvMsjhoOuNsmldXrbhar4bhbrbKTi">
+                                    <div class="footer_contact_content">
+                                        <div class="footer_form_item">
+                                            <input type="text" placeholder="Full Name" name="name" required>
+
+                                        </div>
+                                        <div class="footer_form_item">
+                                            <input type="number" placeholder="Phone Number" name="phone" required
+                                                id="footer_sent_msg_no">
+                                        </div>
+                                        <div class="footer_form_item">
+                                            <textarea type="text" rows="2" placeholder="Message" name="details"
+                                                required></textarea>
+
+                                        </div>
+                                        <div class="footer_form_btn">
+                                            <button type="submit" class="footer_form_btn_link">Send Message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="footer_social_media">
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/royalaidhospital" class="footer_social_media_link"
+                                        target="_blank">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/" class="footer_social_media_link" target="_blank">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="footer_copyright">
+                            <p>Copyright ©
+                                <script>document.write(new Date().getFullYear())</script> All rights reserved | <a
+                                    class="copyright_link" href="https://mohasagorit.solutions/" target="_blank">MIT</a>
+                                Department
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- =============Footer End============ -->
+
+
+
+
+
+
+
+
+    <!-- Jquery -->
+    <script src="assets/js/jquery-3.6.3.min.js"></script>
+    <!-- magnafic popup -->
+    <script src="Assets/js/plugin/jquery.magnific-popup.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="assets/js/plugin/owl.carousel.min.js"></script>
+    <!-- Nice Select -->
+    <script src="path/to/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Javascript -->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
